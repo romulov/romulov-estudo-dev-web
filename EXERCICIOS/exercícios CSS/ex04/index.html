@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="pai">
+            <div class="filho">elemento filho</div>
+        </div>
+        <input type="range" name="size" id="size" min="120" max="300" onchange="getValueRange()">
+    </div>
+    <script>
+        function getValueRange () {
+            let getRange = document.getElementById("size");
+            let size = getRange.value + "px";
+            console.log(size)
+            function changeSize() {
+                document.querySelector(".pai").style.width = size;
+                document.querySelector(".pai").style.height = size;
+            }
+            changeSize();
+        }
+    </script>
+</body>
+</html>

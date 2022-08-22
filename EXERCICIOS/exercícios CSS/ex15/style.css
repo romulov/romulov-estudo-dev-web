@@ -1,0 +1,25 @@
+ol.number {
+    list-style: decimal-leading-zero;
+}
+ol.loweralpha {
+    list-style: lower-alpha;
+}
+ol.upperalpha {
+    list-style: upper-alpha;
+}
+ol.lowerroman{
+    list-style: lower-roman;
+}
+ol.upperroman {
+    list-style: upper-roman;
+}
+ul.circle {
+    list-style: circle;
+}
+ul.square {
+    list-style: square;
+}
+ul.personalizado {
+    list-style:  square url(./pepo-sad-pepe.gif) ;
+    
+}

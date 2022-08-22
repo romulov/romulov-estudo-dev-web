@@ -1,0 +1,13 @@
+* {
+    font-size: 30px;
+}
+.googlefonts {
+    font-family: 'Dancing Script', cursive;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Audiowide-Regular.ttf);
+}
+.facefont {
+    font-family: myFirstFont;
+}

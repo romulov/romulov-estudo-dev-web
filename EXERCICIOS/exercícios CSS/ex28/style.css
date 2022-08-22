@@ -1,0 +1,117 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #1f1f1f;
+    padding: 10px;
+    width: 400px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 40px;
+}
+
+
+
+.translate {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    position: relative;
+    margin-top: 50px;
+}
+.translate div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    transform: translate(100px, 100px);
+    -webkit-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    background-color: yellow;
+}
+
+
+.rotate {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.rotate div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    
+}
+
+.scale {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.scale div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: scale(1.5, 2);
+    -webkit-transform: scale(1.5, 2);
+    -ms-transform: scale(1.5, 2);
+    -moz-transform: scale(1.5, 2);
+}
+
+.skew {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.skew div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: skew(20deg, 10deg);
+    -webkit-transform: skew(20deg, 10deg);
+    -ms-transform: skew(20deg, 10deg);
+    -moz-transform: skew(20deg, 10deg);
+}
+
+.matrix {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.matrix div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: matrix(1.2, -0.5, -0.7, 1.5, 0, 0);
+    -webkit-transform: matrix(1.2, -0.5, -0.7, 1.5, 0, 0);
+    -ms-transform: matrix(1.2, -0.5, -0.7, 1.5, 0, 0);
+    -moz-transform: matrix(1.2, -0.5, -0.7, 1.5, 0, 0);
+}

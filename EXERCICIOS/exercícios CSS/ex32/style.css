@@ -1,0 +1,186 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #1f1f1f;
+    padding: 10px;
+    width: 410px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 40px;
+}
+.container2 {
+    height: 400px;
+    width: 400px;
+    border: solid 1px black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*animation-duration*/
+.animation-duration > div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px gray;
+    background-color: red;
+    animation-name: animation1 ;
+    animation-duration: 7s;
+}
+@keyframes animation1 {
+    from {
+        background-color: red;
+    } to {
+        background-color: blue;
+    }
+}
+
+/*animation-dely*/
+.animation-delay > div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px gray;
+    background-color: blue;
+    animation-name: animation2 ;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+@keyframes animation2 {
+    0%{background-color: blue;}
+    25%{background-color: yellow;}
+    50%{background-color: green;}
+    75%{background-color: purple;}
+    100%{background-color: red;}
+}
+
+/*animation-interation-count*/
+.animation-interation-count > div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px gray;
+    background-color: red;
+    animation-name: animation3 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation3 {
+    from {
+        width: 200px;
+    } to {
+        width: 300px;
+    }
+}
+
+/*animation-direction*/
+.animation-direction {
+    display: block;
+}
+.animation-direction > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    animation-name: animation4 ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation4 {
+    0%   {left:0px; top:0px;}
+    25%  {left:300px; top:0px;}
+    50%  {left:300px; top:300px;}
+    75%  {left:0px; top:300px;}
+    100% {left:0px; top:0px;}
+  }
+
+/*animation-fill-mode*/
+.animation-fill-mode > div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px gray;
+    background-color: red;
+    animation-name: animation3 ;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation3 {
+    from {
+        width: 200px;
+    } to {
+        width: 300px;
+    }
+}
+
+/*animation-timing-function*/
+.animation-timing-function {
+    display: block;
+    height: 500px;
+    padding: 5px;
+}
+.animation-timing-function > div {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border: solid 1px gray;
+    background-color: rgb(238, 255, 0);
+    animation-name: animation5 ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.item1 {
+    animation-timing-function: ease;
+}
+.item2 {
+    animation-timing-function: linear;
+}
+.item3 {
+    animation-timing-function: ease-in;
+}
+.item4 {
+    animation-timing-function: ease-out;
+}
+.item5 {
+    animation-timing-function: ease-in-out;
+}
+.item6 {
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+@keyframes animation5 {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/*animation-shorthand*/
+.animation-shorthand {
+    display: block;
+}
+.animation-shorthand > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    animation: animation4 4s  linear infinite alternate;
+}
+@keyframes animation4 {
+    0%   {left:0px; top:0px;}
+    25%  {left:300px; top:0px;}
+    50%  {left:300px; top:300px;}
+    75%  {left:0px; top:300px;}
+    100% {left:0px; top:0px;}
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #7fbec5;
+            text-align: center;
+        }
+        .container {
+            display: inline-block;
+            background-color: rgb(250, 252, 255);
+            margin: 10px 0;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type="button"] {
+            padding: 10px;
+        }
+        #rvalue {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="username">Username:</label><br>
+            <input type="text" id="usarname" name="usarname"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <p>Favorite web language:</p><br>
+            <input type="radio" name="fav_lang" id="html">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="fav_lang" id="css">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="fav_lang" id="js" checked>
+            <label for="js">JavaScrit</label><br>
+            <p>Choose your vehicle: </p><br>
+            <input type="checkbox" name="vehicle" id="car">
+            <label for="car">I have a car</label><br>
+            <input type="checkbox" name="vehicle" id="bike">
+            <label for="bike">I have a bike</label><br>
+            <input type="checkbox" name="vehicle" id="boat">
+            <label for="boat">I have a boat</label><br>
+            <p>Click on the botton:</p><br>
+            <input type="button" value="teste" onclick="alert('TESTE')"><br>
+            <label for="fcolor">Favorite color: </label>
+            <input type="color" name="fcolor" id="fcolor"><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" max="2005-01-01" min="1980-01-01"><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email"><br>
+            <label for="snumber">Select a number <br>(between 1 and 5): </label><br>
+            <input type="number" name="snumber" id="snumber" min="1" max="5"><br>
+            <label for="snumber1">Select a number <br>(between 0 and 100): </label><br>
+            <input type="range" name="snumber" id="snumber1" min="0" max="100" onchange="rvalue()">
+            <p id="rvalue">-- </p><br>
+            <label for="search">Search on Google:</label><br>
+            <input type="search" name="search" id="search"><br>
+            <label for="tel">Telephone:</label><br>
+            <input type="tel" name="tel" id="tel" placeholder="(00)00000000"><br>
+            <label for="hpage">Add your homepage: </label><br>
+            <input type="url" id="hpage" name="hpage">
+
+            <input type="reset">
+            <input type="submit">
+        </form>
+        
+    </div>
+    <script>
+        let pRange = document.querySelector("#rvalue")
+        function rvalue(){
+            let getRange = document.querySelector("#snumber1")
+            let getValue = getRange.value
+            pRange.innerHTML = getValue
+        }
+    </script>
+</body>
+</html>

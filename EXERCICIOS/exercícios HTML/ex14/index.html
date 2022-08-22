@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        div {
+            margin: 20px;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+        }
+        img:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="leao" data-velmax="50" data-peso="250" onclick="caracteristicas(this.id)">
+            <img src="./images/leao.webp" alt="leao" >
+        </div>
+        <div id="lobo" data-velmax="70" data-peso="80" onclick="caracteristicas(this.id)">
+            <img src="./images/lobo.webp" alt="leao" >
+        </div>
+        <div id="tubarao" data-velmax="40" data-peso="2500" onclick="caracteristicas(this.id)">
+            <img src="./images/tubarao.webp" alt="leao" >
+        </div>
+    </div>
+    <script>
+        function caracteristicas(predador) {
+            let vm = document.getElementById(predador).dataset.velmax;
+            let ps = document.getElementById(predador).dataset.peso;
+            alert("Velocidade máxima: " + vm + "km/hr" +"\nPeso: " + ps + "kg" );
+        }
+    </script>
+</body>
+</html>

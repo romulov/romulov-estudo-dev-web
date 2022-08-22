@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+        }
+        .container {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .control {
+            display: inline-block;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        img {
+            width: 40px;
+            opacity: 0.6;
+            margin: 0 10px;
+            z-index: 3;
+        }
+        img:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="control">
+            <img src="./images/backward.png" onclick="backward()">
+            <img src="./images/play_pause.gif" onclick="playPause()">
+            <img src="./images/forward.png" onclick="forward()">
+        </div>
+        <video id="video" src="./video.mp4"></video>
+    </div>
+    <script>
+        let video = document.getElementById("video");
+        function playPause(){
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+        function backward(){
+            video.currentTime -= 2;
+        }
+        function forward(){
+            video.currentTime += 2;
+            
+        }
+    </script>
+</body>
+</html>

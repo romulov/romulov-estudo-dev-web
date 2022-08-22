@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PSEUDO-CLASSES</h1>
+    <div class="container">
+        <h2>:active</h2>
+        <div class="active">
+            <p><a href="#" target="_self">Quando o link esta sendo clicado ele esta em um estado :active </a></p>
+        </div>
+
+        <h2>:checked</h2>
+        <div class="checked">
+            <input type="checkbox" name="cc1" id="cc1">
+            <input type="checkbox" name="cc2" id="cc2" disabled>
+            <input type="radio" name="cr1" id="cr1">
+            <input type="radio" name="cr1" id="cr1">
+        </div>
+
+        <h2>:disabled</h2>
+        <div class="disabled">
+            <select>
+                <option value="bulldog">Bulldog</option>
+                <option value="cocker" disabled>Cocker</option>
+                <option value="labrador">Labrador</option>
+                <option value="poodle" disabled>Poodle</option>
+                <option value="husky">Husky</option>
+            </select>
+        </div>
+
+        <h2>:enabled</h2>
+        <div class="enabled">
+            <select>
+                <option value="bulldog">Bulldog</option>
+                <option value="cocker" disabled>Cocker</option>
+                <option value="labrador">Labrador</option>
+                <option value="poodle" disabled>Poodle</option>
+                <option value="husky">Husky</option>
+            </select>
+        </div>
+
+        <h2>:empty</h2>
+        <div class="empty">
+            <p></p>
+            <p>A paragraph.</p>
+            <p>Another paragraph.</p>
+        </div>
+
+        <h2>:first-child</h2>
+        <div class="firstchild">
+            <p>This paragraph is the first child of its parent (firstchild).</p>
+            <p>This paragraph is not the first child of its parent (firstchild).</p>
+            <div>
+              <p>This paragraph is the first child of its parent (div).</p>
+              <p>This paragraph is not the first child of its parent (div).</p>
+            </div>
+
+        </div>
+
+        <h2>:first-of-type</h2>
+        <div class="firstot">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+        </div>
+
+        <h2>:focus</h2>
+        <div class="focus">
+            <p>First name: <input type="text" name="firstname"></p> 
+            <p>Last name: <input type="text" name="lastname"></p>
+        </div>
+
+        <h2>:hover</h2>
+        <div class="hover">
+            <p><a href="#" target="_self">Quando o mouse esta sobre o link ele esta em estado :hover </a></p>
+        </div>
+
+        <h2>:in-range</h2>
+        <div class="inrange">
+            <input type="number" min="5" max="10" value="12">
+            <p>(número maior que 5 e menor que 10)</p>
+        </div>
+
+        <h2>:invalid</h2>
+        <div class="invalid">
+            <input type="email" value="supportEmail">
+            <p>Try typing a legal e-mail address, to see the styling disappear.</p>
+        </div>
+
+        <h2>:lang(language)</h2>
+        <div class="lang">
+            <p lang="en">I live in Italy.</p>
+            <p lang="it">Ciao bella!</p>
+        </div>
+
+
+        <h2>:last-child</h2>
+        <div class="lastchild">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <div>this is a div</div>
+            <p>The fourth paragraph.</p>
+        </div>
+
+        <h2>:last-of-type</h2>
+        <div class="lastot">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+            <div>this is a div</div>
+        </div>
+
+        <h2>:link</h2>
+        <div class="link">
+            <p><a href="#####" target="_self">Quando o link ainda não foi visitado ele esta em estado:link </a></p>
+        </div>
+
+        <h2>:not(selector)</h2>
+        <div class="not">
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <div>This is some text in a div element.</div>
+            <h4>This is a h4 element</h4>
+
+        </div>
+
+        <h2>:nth-child(n)</h2>
+        <div class="nthchild">
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <ul>
+                <li>First list item</li>
+                <li>Second list item</li>
+                <li>Third list item</li>
+                <li>Fourth list item</li>
+                <li>Fifth list item</li>
+            </ul>
+        </div>
+
+        <h2>:nth-last-child(n)</h2>
+        <div class="nthlastchild">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+        </div>
+
+        <h2>:nth-last-of-type(n)</h2>
+        <div class="nthlastot">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+        </div>
+
+        <h2>:nth-of-type(n)</h2>
+        <div class="nthoftype">
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <div>
+                <p>This is some text.</p>
+            </div>
+              
+            <ul>
+                <li>First list item</li>
+                <li>Second list item</li>
+                <li>Third list item</li>
+                <li>Fourth list item</li>
+                <li>Fifth list item</li>
+            </ul>
+        </div>
+
+        <h2>:only-of-type</h2>
+        <div class="onlyoftype">
+            <div><p>This is a paragraph.</p></div>
+            <div><p>This is a paragraph.</p><p>This is a paragraph.</p></div>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>:only-child</h2>
+        <div class="onlychild">
+            <p>This is a paragraph.</p>
+            <div><p>This is a paragraph.</p></div>
+            <div><span>This is a span.</span><p>This is a paragraph.</p></div>
+        </div>
+
+        <h2>:optional</h2>
+        <div class="optional">
+            <p>An optional input element:<br><input></p>
+            <p>A required input element:<br><input required></p>
+        </div>
+
+        <h2>:out-of-range</h2>
+        <div class="outofrange">
+            <input type="number" min="5" max="10" value="12">
+            <p>(número maior que 5 e menor que 10)</p>
+        </div>
+
+        <h2>:read-only</h2>
+        <div class="readonly">
+            <p>A normal input element:<br><input value="hello"></p>
+            <p>A readonly input element:<br><input readonly value="hello"></p>
+        </div>
+
+        <h2>:read-write</h2>
+        <div class="readwrite">
+            <p>A normal input element:<br><input value="hello"></p>
+            <p>A readonly input element:<br><input readonly value="hello"></p>
+        </div>
+
+        <h2>:required</h2>
+        <div class="required">
+            <p>An optional input element:<br><input></p>
+            <p>A required input element:<br><input required></p>
+        </div>
+
+        <h2>:root</h2>
+        <div class="root">
+            <p>:root {background-color: aliceblue;}</p>
+        </div>
+
+        <h2>:target</h2>
+        <div class="target">
+            <p><a href="#news1">Ir para o conteúdo 1</a></p>
+            <p><a href="#news2">Ir para o conteúdo 2</a></p>
+            <p id="news1"><b>Conteúdo 1...</b></p>
+            <p id="news2"><b>Conteúdo 2...</b></p>
+        </div>
+
+        <h2>:valid</h2>
+        <div class="valid">
+            <input type="email" value="support@example.com">
+            <p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+        </div>
+
+        <h2>:visited</h2>
+        <div class="visited">
+            <p><a href="#" target="_blank">Quando o link já foi visitado ele esta em estado :visited </a></p>
+        </div>
+
+    </div>
+</body>
+</html>

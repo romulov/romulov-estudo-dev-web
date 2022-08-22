@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.b {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #c3d9ec;
+}
+
+.dotted {
+    border: dotted 5px brown;
+}
+.dashed {
+    border: dashed 5px brown;
+}
+.solid {
+    border: solid 5px brown;
+}
+.double {
+    border: double 5px brown;
+}
+.double {
+    border: double 10px brown;
+}
+.groove {
+    border: groove 20px brown;
+}
+.ridge {
+    border: ridge 20px brown;
+}
+.inset {
+    border: inset 20px brown;
+}
+.outset {
+    border: outset 20px brown;
+}
+.none {
+    border: none;
+}
+.hidden {
+    border: hidden 10px brown;
+}

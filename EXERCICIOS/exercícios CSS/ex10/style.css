@@ -1,0 +1,64 @@
+.legenda{
+    display: inline-block;
+    box-shadow: 1px 1px 5px gray;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+}
+.lmargin{
+    padding: 10px;
+    background-color: #ff8888;
+}
+.lborder{
+    padding: 10px;
+    background-color: #fff788;
+}
+.lpadding{
+    padding: 10px;
+    background-color: #a0ff88;
+}
+.lcontent{
+    padding: 10px;
+    background-color: #88bcff;
+}
+
+.container {
+    margin: auto;
+    box-shadow: 1px 1px 5px gray;
+    display: inline-block;
+    box-sizing: border-box;
+    border: dashed 2px gray;
+}
+.margin {
+    margin: auto;
+    width: 750px;
+    height: 350px;
+    background-color: #ff8888;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.border {
+    margin: auto;
+    width: 700px;
+    height: 300px;
+    background-color: #fff788;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 2px gray;
+}
+.padding {
+    margin: auto;
+    width: 650px;
+    height: 250px;
+    background-color: #a0ff88;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content {
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    background-color: #88bcff;
+    border: dashed 2px gray;
+}

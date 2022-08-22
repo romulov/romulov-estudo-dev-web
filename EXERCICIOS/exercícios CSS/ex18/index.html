@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Position</h1>
+        <div class="p static">
+            <h1>Position: static;</h1>
+            <p>A propriedade position define por default o valor static para todos os elementos. Elementos posicionados em static não são afetados pelas propriedades top, bottom, left e right. Um elemento com position: static;não está posicionado de forma especial; é sempre posicionado de acordo com o fluxo normal da página.</p>
+        </div>
+        <div class="p sticky">
+            <h1>Position: sticky;</h1>
+            <p>Um elemento com position: sticky; é posicionado com base na posição de rolagem do usuário. Um elemento sticky se comporta de maneira parecida com elementos relative e fixed, dependendo da posição de rolagem. Ele tem uma posição relativa até que uma determinada posição de deslocamento seja encontrada na viewport, então ele "gruda" no lugar (como position:fixed).</p>
+        </div>
+        <div class=" p relative">
+            <h1>Position: relative;</h1>
+            <p>Um elemento com position: relative; é posicionado em relação à sua posição normal. Definir as propriedades top, bottom, left e right de um elemento relativamente posicionado fará com que ele seja ajustado para fora de sua posição normal. Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento.</p>
+            <div class="p absolute">
+                <h1>Position: absolute;</h1>
+                <p>Um elemento com position: absolute; é posicionado em relação ao elemento parent com position:relative; mais próximo (em vez de posicionado em relação à janela de visualização, como static). No entanto; se um elemento posicionado absoluto não tiver parents com position:relative , ele usará o corpo do documento e se moverá junto com a rolagem da página. Os elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.</p>
+            </div>
+        </div>
+        <div class="p fixed">
+            <h1>Position: fixed;</h1>
+            <p>Um elemento com position: fixed;é posicionado em relação à janela de visualização, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada(scroll). As propriedades top, right, bottom e left são usadas para posicionar o elemento. Um elemento fixo não deixa uma lacuna na página onde normalmente estaria localizado.</p>
+        </div>
+
+    </div>
+</body>
+</html>

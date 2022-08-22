@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ajustes de Texto</h1>
+    <div class="container color">
+        <h2>color</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut repellat quis est asperiores doloribus maiores minima facere ipsum voluptatibus? Eos amet molestias architecto, dicta rem rerum cumque laudantium corrupti aliquam!</p>
+        <label for="#icolor">selecionar a cor do texto:</label>
+        <input type="color" name="icolor" id="icolor" onchange="mudarcor()" value="#703f3f">
+    </div>
+
+    <div class="container background">
+        <h2>background</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut repellat quis est asperiores doloribus maiores minima facere ipsum voluptatibus? Eos amet molestias architecto, dicta rem rerum cumque laudantium corrupti aliquam!</p>
+        <label for="#ibcolor">selecionar a cor do background:</label>
+        <input type="color" name="ibcolor" id="ibcolor" onchange="mudarbcg()" value="#f0f8ff">
+    </div>
+
+    <div class="container textdecoration">
+        <h2>text-decoration</h2>
+        <p class="tdoverline">Overline text decoration</p>
+        <p class="tdlinethrought">Line-throught text decoration</p>
+        <p class="tdunderline">Underline text decoration</p>
+        <p class="tdou">Overline and Underline text decoration</p>
+        <p class="tdnone"> text decoration none</p>
+        <p class="tdcolor">text decoration with color</p>
+        <p class="tdstyle">text decoration with style</p>
+        <p class="tdthickness">text decoration with thickness(espessura)</p>
+    </div>
+
+    <div class="container texttransform">
+        <h2>text-transform</h2>
+        <p>(text-transform: uppercase;)</p><p class="ttupercase"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(text-transform: lowercase;)</p><p class="ttlowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(text-transform: capitalize;)</p><p class="capitalizecase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+    </div>
+
+    <div class="container alinhamento">
+        <h2>Alinhamento de Texto</h2>
+        <p>( text-align:left;)</p><p class="ata">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis.</p>
+        <p>(text-align-last:right;)</p><p class="atal">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis.</p>
+        <p>(vertical-align: baseline;)</p><p class="ava">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis.</p>
+        <p>(direction: rtl;)</p><p class="ad">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis.</p>
+
+    </div>
+
+    <div class="container espacamento">
+        <h2>Espaçamento de Texto</h2>
+        <p>(text-indent: 50%;)</p><p class="eti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(letter-spacing: 5px;)</p><p class="els">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(line-height: 10px;)</p><p class="elh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(word-spacing: 10px;)</p><p class="ewrds"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+        <p>(white-space:nowrap;)</p><p class="ews"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat fugiat, voluptatibus corporis sequi accusamus dolorum dolor ipsam eaque? Ab voluptates facere sed unde voluptas aliquam iste ea distinctio! Blanditiis. </p>
+    </div>
+
+    <div class="container sombra">
+        <h2>sombra de Texto</h2>
+        <p class="ss"> text shadow effect</p>
+        <p class="sb">text shadow effect with blur</p>
+        <p class="srbn">Text-shadow with red and blue neon glow</p>
+        <p class="sgrb">Text-shadow with green, red and blue neon glow</p>
+    </div>
+
+
+    <script>
+        function mudarcor(){
+            let valorInput = document.getElementById("icolor").value;
+            let gContainer = document.querySelector(".color");
+            gContainer.style.color = valorInput;
+        }
+        function mudarbcg(){
+            let valorInput = document.getElementById("ibcolor").value;
+            let gContainer = document.querySelector(".background");
+            gContainer.style.backgroundColor = valorInput;
+        }
+    </script>
+</body>
+</html>

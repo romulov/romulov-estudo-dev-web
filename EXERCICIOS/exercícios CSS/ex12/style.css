@@ -1,0 +1,79 @@
+body {
+    padding: 0 20%;
+    font-size: 17px;
+}
+.container{
+    box-shadow: 0 0 5px gray;
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+/*font-family*/
+.ffserif {
+    font-family: serif;
+}
+.ffsanserif {
+    font-family: sans-serif;
+}
+.ffmonospace {
+    font-family: monospace;
+}
+.ffcursive {
+    font-family: cursive;
+}
+.fffantasy{
+    font-family: fantasy;
+}
+
+/*font size*/
+.fsa {
+    font-size: 30px;
+}
+.fsr {
+    font-size: 1.2em;
+}
+
+/*font style*/
+.fstnormal {
+    font-style: normal;
+}
+.ftstitalic {
+    font-style: italic;
+}
+.fstoblique {
+    font-style: oblique;
+}
+
+/*font-variant*/
+.fvnormal {
+    font-variant: normal;
+}
+.fvsmallcaps {
+    font-variant: small-caps;
+}
+
+/*font-wight*/
+.fwnormal {
+    font-weight: normal;
+}
+.fwlighter {
+    font-weight: lighter;
+}
+.fwbold {
+    font-weight: bold;
+}
+.fwx {
+    font-weight: 900;
+}
+
+/*font shorthand*/
+.fshorthand1 {
+    font: 20px arial, sans-serif;
+}
+.fshorthand2 {
+    font: 12px/30px italic bold Georgia, serif;
+}

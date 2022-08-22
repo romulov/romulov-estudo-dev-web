@@ -1,0 +1,77 @@
+body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dog {
+    width: 800px;
+    height: 700px;
+    background-color: rgb(207, 160, 160);
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: scale(0.7);
+}
+.part1 {
+    z-index: 1;
+    position: absolute;
+    transform: translateX(45%);
+    width: 300px;
+    height: 300px;
+    background-color: #e6b448;
+    border-radius: 0 10% 50% 0 ;
+}
+.part2 {
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    width: 300px;
+    height: 300px;
+    background-color: #e6b448;
+    box-shadow: 1px 1px 1px rgb(87, 87, 87);
+    border-radius: 0 0 50% 50% ;
+}
+.part3 {
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    background-color: #e6b448;
+    border-radius: 45% 45% 0 0 ;
+    transform: translate(-35%, -40%);
+}
+.eyes {
+    z-index: 3;
+    position: absolute;
+    transform: translate(-50%, -180px);
+    width: 70px;
+    height: 70px;
+    background-color: #2c2c2c;
+    border: solid 2px white;
+    border-bottom: solid 10px white;
+    border-left: solid 10px white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.tongue {
+    z-index: 0;
+    position: absolute;
+    width: 70px;
+    height: px;
+    background-color: rgb(235, 63, 63);
+    border-radius: 0 0 40% 40%;
+    transform: rotate(-45deg) translate(30px, 240px);
+    animation: tongueanimation 0.5s ease-in-out  infinite alternate;
+
+}
+
+@keyframes tongueanimation {
+    from {
+        height: 75px;
+    }
+    to {
+        height: 150px;
+    }
+}

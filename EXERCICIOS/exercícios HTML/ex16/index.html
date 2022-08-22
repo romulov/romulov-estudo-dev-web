@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50%);
+            display: inline-block;
+        }
+        .control {
+            display: flex;
+            border-radius: 10px;
+            background-color: #dcdcdc;
+            box-shadow: 5px 5px 5px gray;
+            
+        }
+        .vol_control {
+            display: inline-block;
+            transition: 2s;
+        }
+        img {
+            margin: 10px;
+            width: 40px;
+            opacity: 0.9;
+        }
+        img:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="control">
+            <img src="./images/backward.png" onclick="backward()">
+            <img src="./images/play.png" onclick="play()">
+            <img src="./images/pause.png" onclick="pause()">
+            <img src="./images/forward.png" onclick="forward()">
+            <img src="./images/vol_menos.png"onclick="volMenos()">
+            <img src="./images/vol_mais.png"onclick="volMais()">
+            <img src="./images/vol_mudo.png"onclick="mudo()">
+        </div>
+        <audio id="audio" src="./whoa.mp3" ></audio>
+    </div>
+    <script>
+        let audio = document.querySelector("#audio");
+
+        function play() {
+            audio.play();
+        }
+        function pause() {
+            audio.pause();
+        }
+        function backward() {
+            audio.currentTime -= 5;
+        }
+        function forward() {
+            audio.currentTime += 5;
+
+        }
+        function volMais() {
+            audio.volume += 0.2;
+        }
+        function volMenos() {
+            audio.volume -= 0.2;
+        }
+        function mudo() {
+            if (audio.muted) {
+                audio.muted = false;
+            } else {
+                audio.muted = true;
+            }
+        }
+ 
+    </script>
+</body>
+</html>

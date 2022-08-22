@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 30</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flexbox</h1>
+        <h2>display:flex</h2>
+        <div class="displayflex">
+            <div class="flexcontainer df">
+                <div class="d">1</div>
+                <div class="d">2</div>
+                <div class="d">3</div>
+            </div>
+            <button onclick="displayFlex()">display: flex;</button>
+            <button onclick="displayBlock()">display: block;</button>
+        </div>
+
+        <h2>flex-Direction</h2>
+        <div class="flexdirection">
+            <div class="flexcontainer fd">
+                <div class="d">1</div>
+                <div class="d">2</div>
+                <div class="d">3</div>
+            </div>
+            <button onclick="flexDirectionRow()">flex-direction: row;</button>
+            <button onclick="flexDirectionRowRev()">flex-direction: row-reverse;</button>
+            <button onclick="flexDirectionColumn()">flex-direction: column;</button>
+            <button onclick="flexDirectionColumnRev()">flex-direction: column-reverse;</button>
+        </div>
+
+        <h2>flex-wrap</h2>
+        <div class="flexwrap">
+            <div class="flexcontainer fw">
+                <div class="d">1</div>
+                <div class="d">2</div>
+                <div class="d">3</div>
+                <div class="d">4</div>
+                <div class="d">5</div>
+                <div class="d">6</div>
+            </div>
+            <button onclick="flexWrapNo()">flex-wrap: nowrap;</button>
+            <button onclick="flexWrap()">flex-wrap: wrap;</button>
+            <button onclick="FlexWrapReverse()">flex-wrap: wrap-reverse;</button>
+        </div>
+
+        
+        <h2>justify-content</h2>
+        <div class="justifycontent">
+            <div class="flexcontainer jc">
+                <div class="d">1</div>
+                <div class="d">2</div>
+                <div class="d">3</div>
+            </div>
+            <button onclick="jCFlexStart()">justify-content: flex-start;</button>
+            <button onclick="jCFlexEnd()">justify-content: flex-end;</button>
+            <button onclick="jCCenter()">justify-content: center;</button>
+            <button onclick="jCSpaceAround()">justify-content: space-around;</button>
+            <button onclick="jCSpaceBetween()">justify-content: space-between;</button>
+            <button onclick="jCSpaceEvenly()">justify-content: space-evenly;</button>
+        </div>
+
+        <h2>Align Items</h2>
+        <div class="alignitems">
+            <div class="flexcontainer ai">
+                <div class="dai">1</div>
+                <div class="dai">2</div>
+                <div class="dai">3</div>
+            </div>
+            <button onclick="aiStretch()">align-items: stretch;</button>
+            <button onclick="aiFlexStart()">align-items: flex-start;</button>
+            <button onclick="aiFlexEnd()">align-items: flex-end;</button>
+            <button onclick="aiCenter()">align-items: center;</button>
+            <button onclick="aiBaseline()">align-items: baseline;</button>
+        </div>
+
+        <h2>Align-Content</h2>
+        <div class="aligncontent">
+            <div class="flexcontainer ac">
+                <div class="dac">1</div>
+                <div class="dac">2</div>
+                <div class="dac">3</div>
+                <div class="dac">4</div>
+                <div class="dac">5</div>
+                <div class="dac">6</div>
+            </div>
+            <button onclick="acStretch()">align-content: stretch;</button>
+            <button onclick="acFlexStart()">align-content: flex-start;</button>
+            <button onclick="acFlexEnd()">align-content: flex-end;</button>
+            <button onclick="acCenter()">align-content: center;</button>
+            <button onclick="acSpaceAround()">align-content: space-around;</button>
+            <button onclick="acSpaceBetween()">align-content: space-between;</button>
+            <button onclick="acSpaceEvenly()">align-content: space-evenly;</button>
+        </div>
+
+        <h2>Centralização Perfeita</h2>
+        <div class="centralizar">
+            <div class="flexcontainer c">
+                <div class="d"><p>justify-content: center; <br> align-items: center;</p> </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <h1>Flex Items</h1>
+        <h2>Flex-Grow</h2>
+        <div class="flexgrow">
+            <div class="flexcontainer fg">
+                <div class="dfg dfg1">1x</div>
+                <div class="dfg dfg2">2x</div>
+                <div class="dfg dfg3">3x</div>
+            </div>
+        </div>
+
+        <h2>Flex-Shrink</h2>
+        <div class="flexshrink">
+            <div class="flexcontainer fs">
+                <div class="dfs">1</div>
+                <div class="dfs">2</div>
+                <div class="dfs">3</div>
+                <div class="dfs dfs4">4</div>
+                <div class="dfs">5</div>
+                <div class="dfs">6</div>
+                <div class="dfs">7</div>
+            </div>
+        </div>
+
+        <h2>Order</h2>
+        <div class="order">
+            <div class="flexcontainer od">
+                <div class="d od1 od1">1</div>
+                <div class="d od2">2</div>
+                <div class="d od3">3</div>
+                <div class="d od4">4</div>
+                <div class="d od5">5</div>
+            </div>
+        </div>
+
+        <h2>Align-Self</h2>
+        <div class="alignself">
+            <div class="flexcontainer as">
+                <div class="das das1">1</div>
+                <div class="das das2">2</div>
+                <div class="das das3">3</div>
+                <div class="das das4">4</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+        //display flex
+        let df = document.querySelector(".df");
+        function displayFlex(){
+            df.style.setProperty("display","flex");
+        }
+        function displayBlock(){
+            df.style.setProperty("display","block");
+        }
+
+        // flex direction
+        let fd = document.querySelector(".fd");
+        function flexDirectionRow(){
+            fd.style.setProperty("flex-direction","row")
+        }
+        function flexDirectionRowRev(){
+            fd.style.setProperty("flex-direction","row-reverse");
+        }
+        function flexDirectionColumn(){
+            fd.style.setProperty("flex-direction","column");
+        }
+        function flexDirectionColumnRev(){
+            fd.style.setProperty("flex-direction","column-reverse");
+        }
+
+        //flex wrap
+        let fw = document.querySelector(".fw");
+        function flexWrapNo(){
+            fw.style.setProperty("flex-wrap","nowrap");
+        }
+        function flexWrap(){
+            fw.style.setProperty("flex-wrap","wrap");
+        }
+        function FlexWrapReverse(){
+            fw.style.setProperty("flex-wrap","wrap-reverse");
+        }
+
+        //Justify Content
+        let jc = document.querySelector(".jc");
+        function jCFlexStart(){
+            jc.style.setProperty("justify-content", "flex-start");
+        }
+        function jCFlexEnd(){
+            jc.style.setProperty("justify-content", "flex-end");
+        }
+        function jCCenter(){
+            jc.style.setProperty("justify-content", "center");
+        }
+        function jCSpaceAround(){
+            jc.style.setProperty("justify-content", "space-around");
+        }
+        function jCSpaceBetween(){
+            jc.style.setProperty("justify-content", "space-between");
+        }
+        function jCSpaceEvenly(){
+            jc.style.setProperty("justify-content", "space-evenly");
+        }
+
+        //Align Items
+        let ai = document.querySelector(".ai");
+        function aiStretch(){
+            ai.style.setProperty("align-items","stretch");
+        }
+        function aiFlexStart(){
+            ai.style.setProperty("align-items","flex-start");
+        }
+        function aiFlexEnd(){
+            ai.style.setProperty("align-items","flex-end");
+        }
+        function aiCenter(){
+            ai.style.setProperty("align-items","center");
+        }
+        function aiBaseline(){
+            ai.style.setProperty("align-items","baseline");
+        }
+
+        //Aling Content
+        let ac = document.querySelector(".ac");
+        function acStretch(){
+            ac.style.setProperty("align-content", "stretch")
+        }
+        function acFlexStart(){
+            ac.style.setProperty("align-content", "flex-start")
+        }
+        function acFlexEnd(){
+            ac.style.setProperty("align-content", "flex-end")
+        }
+        function acCenter(){
+            ac.style.setProperty("align-content", "center")
+        }
+        function acSpaceAround(){
+            ac.style.setProperty("align-content", "space-around")
+        }
+        function acSpaceBetween(){
+            ac.style.setProperty("align-content", "space-between")
+        }
+        function acSpaceEvenly(){
+            ac.style.setProperty("align-content", "space-evenly")
+        }
+    </script>
+</body>
+</html>

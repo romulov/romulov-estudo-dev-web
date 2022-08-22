@@ -1,0 +1,197 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #1f1f1f;
+    width: 600px;
+    padding: 10px;
+}
+h2 {
+    margin-top: 40px;
+}
+
+/*pseudo-class ACTIVE*/
+.active a:active{
+    font-weight: bold;
+    color: red;
+}
+
+/*pseudo-class CHECKED*/
+.checked input:checked{
+    height: 30px;
+    width: 30px;
+}
+
+/*pseudo- class DISABLED*/
+.disabled option:disabled{
+    background-color: brown;
+}
+
+/*pseudo- class ENABLED*/
+.enabled option:enabled {
+    background-color: green;
+}
+
+/*pseudo- class EMPTY*/
+.empty p:empty{
+    width: 100px;
+    height: 20px;
+    background-color: brown;
+}
+
+/*pseudo- class FIRST-CHILD*/
+.firstchild p:first-child{
+    background-color: yellow;
+}
+
+/*pseudo- class FIRST-OF-TYPE*/
+.firstot p:first-of-type{
+    background-color: royalblue;
+}
+
+/*pseudo- class FOCUS*/
+.focus input:focus{
+    background-color: yellow;
+}
+
+/*pseudo- class HOVER*/
+.hover a:hover{
+    background-color: yellow;
+}
+
+/*pseudo- class IN-RANGE*/
+.inrange input:in-range {
+    border: solid 2px green;
+}
+
+/*pseudo- class INVALID*/
+.invalid input:invalid{
+    border: solid 2px red;
+}
+
+/*pseudo- class LANG*/
+.lang p:lang(it){
+    background-color: yellow;
+}
+
+/*pseudo- class LAST-CHILD*/
+.lastchild p:last-child{
+    background-color: brown;
+}
+
+/*pseudo- class LAST-OF-TYPE*/
+.lastot p:last-of-type{
+    background-color: brown;
+}
+
+/*pseudo- class LINK*/
+.link a:link{
+    background-color: yellow;
+}
+
+/*pseudo- class NOT()*/
+.not p{
+    color: #00f;
+}
+.not :not(p){
+    color: red;
+}
+
+
+/*pseudo- class NTH-CHILD(X)*/
+/* Selects the second element of div siblings */
+.nthchild div:nth-child(2){
+    background-color: red;
+}
+/* Selects every third element among any group of siblings */
+.nthchild :nth-child(3){
+    background-color: yellow;
+}
+/* Selects the second li element in a list */
+.nthchild li:nth-child(2) {
+    background: lightgreen;
+}
+
+/*pseudo- class NTH-LAST-CHILD(X)*/
+.nthlastchild :nth-last-child(2){
+    background-color: rebeccapurple;
+}
+
+/*pseudo-class NTH-LAST-OF-TYPE(X)*/
+.nthlastot :nth-last-of-type(2){
+    background-color: green;
+}
+
+/*pseudo-classe NTH-OF-TYPE(X)*/
+/* Selects the second element of div siblings */
+.nthoftype div:nth-of-type(2){
+    background-color: red;
+}
+/* Selects every third element among any group of siblings */
+.nthoftype :nth-of-type(3){
+    background-color: yellow;
+}
+/* Selects the second li element in a list */
+.nthoftype li:nth-of-type(2) {
+    background: lightgreen;
+}
+
+/*pseudo- classe ONLY-OF-TYPE*/
+.onlyoftype p:only-of-type{
+    background-color: aquamarine;
+}
+
+/*pseudo- classe ONLY-CHILD*/
+.onlychild p:only-child{
+    background-color: #7fff8a;
+}
+
+/*pseudo- classe OPTIONAL*/
+.optional input:optional{
+    background-color: yellow;
+}
+
+/*pseudo-classe OUT-OF-RANGE*/
+.outofrange input:out-of-range {
+    border: solid 2px red;
+}
+
+/*pseudo-classe READ-ONLY*/
+.readonly input:read-only{
+    background-color: yellow;
+}
+
+/*pseudo-classe READ-write*/
+.readwrite input:read-write{
+    background-color: yellow;
+}
+
+/*pseudo-classe REQUIRED*/
+.required input:required{
+    background-color: yellow;
+}
+
+
+/*pseudo-classe ROOT*/
+:root {
+    background-color: aliceblue;
+}
+
+/*pseudo-classe TARGET*/
+.target p:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+
+/*pseudo-classe VALID*/
+.valid input:valid{
+    background-color: yellow;
+}
+
+/*pseudo-classe VISITED*/
+.visited a:visited{
+    color: #ff00f2;
+}

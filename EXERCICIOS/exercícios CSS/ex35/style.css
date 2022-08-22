@@ -1,0 +1,55 @@
+body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face {
+    width: 800px;
+    height: 700px;
+    background-color: rgb(207, 160, 160);
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.face1 {
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 500px;
+    background-color: beige;
+    border-radius: 40% 40% 50% 50%;
+}
+.eyes {
+    z-index: 4;
+    width: 90px;
+    height: 70px;
+    border: 20px solid white;
+    outline: 1px solid gray;
+    background-color: black;
+    margin: 50px;
+    border-radius: 40%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.eyes:hover {
+    height: 30px;
+    border: 10px solid white;
+}
+.smile {
+    position: absolute;
+    transform: translateY(50px);
+    z-index: 3;
+    background-color: beige;
+    box-shadow: 0 5px 0 black;
+    width: 200px;
+    height: 200px;
+    transition: 1s linear;
+    cursor: pointer;
+}
+.smile:hover {
+    border-radius: 0 0 20% 20%;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #76afe4;
+        }
+        div {
+            width: 400px;
+            height: 500px;
+            background-color: #d9e7f3;
+            border: solid 1px gray;
+            border-radius: 5px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        input, select, textarea, button, output{
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="./teste.txt" method="get" target="_blank">
+            <label for="#name">Nome:</label>
+            <input id="name" type="text">
+            <label for="#sex">Sexo:</label>
+            <select name="sex" id="sex">
+                <option value="man">Homem</option>
+                <option value="Mulher">Mulher</option>
+            </select>
+            <label for="#comment">Comentário:</label>
+            <textarea name="comment" id="comment" cols="30" rows="2"></textarea>
+            <button type="button" onclick="window.alert('TESTANDO BOTÃO')">Click</button>
+            <fieldset>
+                <legend>Outras informações</legend>
+                <label for="#fname">First Name:</label>
+                <input id="fname" type="text">
+                <label for="#lname">Last Name:</label>
+                <input id="lname" type="text">
+            </fieldset>
+            <label for="#browser"></label>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="teste1"></option>
+                <option value="teste2"></option>
+                <option value="teste3"></option>
+                <option value="teste4"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+    </div>
+    
+</body>
+</html>

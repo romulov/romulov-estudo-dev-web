@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+    box-shadow: 0 0 5px gray;
+    width: 800px;
+    padding: 10px;
+}
+.h1 {
+    text-align: center;
+}
+
+.p {
+    background: linear-gradient(45deg, #bdffbd, #b5b5ff);
+    margin: 20px;
+    border: solid 1px #000000;
+}
+
+.static {
+    display: inline-block;
+    position: static;
+    width: 300px;
+    top: 50px;
+    right: 100px;
+    margin-right: 120px;
+}
+.relative {
+    width: 350px;
+    height: 1900px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.absolute {
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+.fixed {
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.sticky {
+    display: inline-block;
+    width: 300px;
+    position: sticky;
+    top: 0;   
+}

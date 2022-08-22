@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.container{
+    box-shadow: 0 0 5px gray;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+body {
+  text-align: center;
+}
+h2 {
+  margin-top: 50px;
+}
+
+.s1 a[target] {
+  background-color: #eec587;
+}
+.s2 a[target = "_top"] {
+  background-color: #eeec87;
+}
+.s3 p[title ~= "dog"] {
+  background-color: #93ee87;
+}
+.s4 p[title |= "hot"] {
+  background-color: #87eeee;
+}
+.s5 p[title ^= "hot"] {
+  background-color: #8791ee;
+}
+.s6 p[title $= "dog"] {
+  background-color: #cd87ee;
+}
+.s7 p[title *= "do"] {
+  background-color: #ee8787;
+}
+

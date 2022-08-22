@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #1f1f1f;
+    padding: 10px;
+    width: 400px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 40px;
+}
+
+
+/*translate*/
+.translate {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    position: relative;
+}
+/*O método translate move a div tendo como base o canto superior esquerdo*/
+.translate .div2{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    transform: translate(100px, 100px);
+    background-color: yellow;
+}
+.translate .div1{
+    opacity: 0.3;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+}
+.translate span{
+    background-color: red;
+    
+}
+
+/*rotate*/
+.rotate {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.rotate div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: rotate(45deg);
+   
+}
+
+/*scale*/
+.scale {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.scale div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: scale(1.5, 2);
+}
+
+/*skew*/
+.skew {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.skew div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: skew(20deg, 10deg);
+}
+
+/*matrix*/
+.matrix {
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.matrix div{
+    width: 100px;
+    height: 100px;
+    border: solid 1px gray;
+    background-color: yellow;
+    transform: matrix(1.2, -0.5, -0.7, 1.5, 0, 0);
+}

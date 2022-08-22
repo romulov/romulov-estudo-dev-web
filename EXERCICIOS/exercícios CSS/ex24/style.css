@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    box-shadow: 0 0 5px gray;
+    width: 600px;
+    padding: 10px;
+}
+h2 {
+    margin-top: 40px;
+}
+
+.after p::after {
+    content: "----after";
+    background-color: aqua;
+    font-weight: bold;
+}
+.before p::before {
+    content: "before----";
+    background-color: aqua;
+    font-weight: bold;
+}
+.firstletter p::first-letter {
+    font-size: 30px;
+    background-color: aqua;
+    font-weight: bold;
+}
+.firstline p::first-line {
+    background-color: aqua;
+    font-weight: bold;
+}
+::marker {
+    color: #f00;
+    font-size: 25px;
+}
+.selection p::selection {
+    background-color: aqua;
+    font-weight: bold;
+}

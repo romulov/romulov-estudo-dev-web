@@ -1,0 +1,288 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 5px #1f1f1f;
+    padding: 10px 80px;
+    box-sizing: border-box;
+    width: 600px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 40px;
+}
+
+/*display flex*/
+.displayflex {
+    border: solid 1px black;
+    height: 500px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.displayflex .df {
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    display: block;
+}
+.d{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    font-size: 50px;
+    margin: 10px;
+}
+button{
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*Flex-Direction*/
+.flexdirection {
+    border: solid 1px black;
+    height: 550px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.flexdirection .fd{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Flex-Wrap*/
+.flexwrap {
+    border: solid 1px black;
+    height: 550px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.fw{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*Justify-Content*/
+.justifycontent {
+    border: solid 1px black;
+    height: 400px;
+    width: 500px;
+    box-sizing: border-box;
+}
+.jc{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*Align-Items*/
+.alignitems { 
+    border: solid 1px black;
+    height: 550px;
+    width: 480px;
+    box-sizing: border-box;
+}
+.ai{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: stretch;
+}
+.ai .dai{
+    width: 100px;
+
+    background-color: aliceblue;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/*Align Content*/
+.aligncontent { 
+    border: solid 1px black;
+    height: 600px;
+    width: 480px;
+    box-sizing: border-box;
+}
+.ac{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.ac .dac{
+    width: 100px;
+
+    background-color: aliceblue;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/*Centralização Perfeita*/
+.centralizar {
+    border: solid 1px black;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+.centralizar p{
+    font-size: 12px;
+    font-weight: bold;
+}
+.c{
+    background-color: rgb(83, 83, 245);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Flex-Grow*/
+.flexgrow {
+    border: solid 1px black;
+    height: 250px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.fg{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+    display: flex;
+}
+.dfg {
+    background-color: aliceblue;
+    font-size: 50px;
+    margin: 5px;
+}
+.dfg1{
+    flex-grow: 1;
+}
+.dfg2{
+    flex-grow: 2;
+}
+.dfg3{
+    flex-grow: 3;
+}
+
+
+/*Flex-shrink*/
+.flexshirink {
+    border: solid 1px black;
+    height: 250px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.fs{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+    display: flex;
+}
+.dfs {
+    background-color: aliceblue;
+    font-size: 50px;
+    width: 100px;
+    margin: 2px;
+    flex-shrink: 1;
+}
+.dfs4{
+    flex-shrink: 0;
+}
+
+/*order*/
+.order {
+    border: solid 1px black;
+    height: 200px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.od{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+    width: 400px;
+    display: flex;
+}
+.od1{
+    order: 5;
+}
+.od2{
+    order: 4;
+}
+.od3{
+    order: 1;
+}
+.od5{
+    order: 2;
+}
+
+/*Align-Self*/
+.alignself {
+    border: solid 1px black;
+    height: 350px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.as{
+    background-color: rgb(83, 83, 245);
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+}
+.das {
+    background-color: aliceblue;
+    font-size: 50px;
+    width: 100px;
+    margin: 2px;
+}
+.das1 {
+    align-self: stretch;
+}
+.das2 {
+    align-self: flex-end;
+}
+.das3 {
+    align-self: center;
+}
+.das4 {
+    align-self: flex-start;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seletores de atributos</h1>
+    <div class="container">
+        <h2>CSS [ATTRIBUTE] SELECTOR</h2>
+        <div class="s1">
+            <a href="#">Link-1</a>
+            <a href="#" target="_blank">Link-2</a>
+            <a href="#" target="_top">Link-3</a>
+            <a href="#" target="_self">Link-4</a>
+        </div>
+
+        <h2>CSS [ATTRIBUTE="VALUE"] SELECTOR</h2>
+        <div class="s2">
+            <a href="#">Link-1</a>
+            <a href="#" target="_blank">Link-2</a>
+            <a href="#" target="_top">Link-3</a>
+            <a href="#" target="_self">Link-4</a>
+        </div>
+
+        <h2>CCSS [ATTRIBUTE~="VALUE"] SELECTOR</h2>
+        <div class="s3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="cat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+        </div>
+
+        <h2>CSS [ATTRIBUTE|="VALUE"] SELECTOR</h2>
+        <div class="s4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot-dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+        </div>
+
+        <h2>CSS [ATTRIBUTE^="VALUE"] SELECTOR</h2>
+        <div class="s5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hotdog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot-dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="ahotdog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+        </div>
+
+        <h2>CSS [ATTRIBUTE$="VALUE"] SELECTOR</h2>
+        <div class="s6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hotdog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hot-dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="dog-cat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+        </div>
+
+        <h2>CSS [ATTRIBUTE*="VALUE"] SELECTOR</h2>
+        <div class="s7">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="dog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="hotdog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="dog-cat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+            <p title="aaaadogaaaaaa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed sapiente</p>
+        </div>
+
+    </div>
+</body>
+</html>

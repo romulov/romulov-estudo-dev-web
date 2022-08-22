@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COMBINADORES</h1>
+    <div class="container">
+        <h2>Descendant (space)</h2>
+        <div>
+            <div class="descendant">
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </div>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+        </div>
+
+        <h2>Child (>)</h2>
+        <div >
+            <div class="child">
+                <p>Paragraph 1</p>
+                <div>
+                    <p>Paragraph 2 </p>
+                </div>
+                <p>Paragraph 3</p>
+            </div>
+            <p>Paragraph 4</p>
+        </div>
+
+        <h2>Adjacent Sibling (+)</h2>
+        <div>
+            <p>Paragraph 1</p>
+            <div class="adjacent">
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </div>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+        </div>
+
+        <h2>General sibling (~)</h2>
+        <div>
+            <p>Paragraph 1</p>
+            <div class="general">
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </div>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <div>
+                <p>Paragraph 7</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
